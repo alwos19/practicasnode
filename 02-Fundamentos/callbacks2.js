@@ -35,7 +35,7 @@ let getSalario = (empleado, callback) => {
     let salarioDB = salarios.find(salario => salario.id === empleado.id);
 
     if( !salarioDB ) {
-        callback (`No se encontro un salario para el usuario ${empleado.nombre}`);
+        callback (`No se encontro un salario para el empleado ${empleado.nombre}`);
     } else {
         callback(null, {
             nombre: empleado.nombre,
@@ -48,7 +48,7 @@ let getSalario = (empleado, callback) => {
 } 
 
 
-getEmpleado(1, (err, empleado) => {
+getEmpleado(3, (err, empleado) => {
     
     if (err) {
         return console.log(err);

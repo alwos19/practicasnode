@@ -7,7 +7,7 @@ let deadpool = {
     }
 };
 
-let { nombre, apellido, poder } = deadpool;
+let { nombre: primerNombre, apellido, poder } = deadpool;
 
-console.log(nombre, apellido, poder);
+console.log(primerNombre, apellido, poder);
 

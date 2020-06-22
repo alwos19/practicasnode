@@ -10,6 +10,6 @@
 
 //console.log (sumar(10, 20));
 
-let saludar = () => 'Hello word'
+let saludar = () => 'Hello word';
 
 console.log (saludar());

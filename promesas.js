@@ -18,9 +18,9 @@ let salarios = [{
 
 }];
 
-let getEmpleado = (id, ) =>{
+let getEmpleado = (id) =>{
 
-    return new Promise( (resolve, reject)=>{
+    return new Promise( (resolve, reject) => {
 
         let empleadoDB = empleados.find(empleado => empleado.id === id)
 
@@ -53,7 +53,7 @@ let getSalario = (empleado) => {
 
 
 
-getEmpleado(3).then ( empleado => {
+getEmpleado(4).then ( empleado => {
 
     getSalario(empleado).then(resp => {
         console.log(`El Salario de ${resp.nombre} es de ${ resp.salario }$`);
